@@ -20,9 +20,9 @@ defaults:
 
 simple_color:
     enable: true
-    main_color: "#ffffff"
-    secondary_color: "#1a1a1a"
-    third_color: "#2a2a2a"
+    main_color: "#b4e3f0"
+    secondary_color: "#2a2a2a"
+    third_color: "#6196a5"
 
 # Sass conf
 
