@@ -22,7 +22,7 @@ simple_color:
     enable: true
     main_color: "#ffffff"
     secondary_color: "#1a1a1a"
-    third_color: "#650516"
+    third_color: "#e2e2e2"
 
 # Sass conf
 
