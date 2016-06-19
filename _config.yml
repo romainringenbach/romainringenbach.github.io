@@ -4,7 +4,7 @@ url:
 
 logo: /images/logo.png
 categories_with_dates: [News]
-main_category: Documentation
+main_category: "About"
 team_name: "nealith"
 
 content_hide: true
