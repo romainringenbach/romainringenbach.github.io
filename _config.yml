@@ -15,7 +15,7 @@ defaults:
             path: ""
         values:
             title: "Nealith"
-            description: "My personal gh-pages on GitHub"
+            description: "My personal gh-page on GitHub"
             tags: ["Romain","Ringenbach","Romain Ringenbach","nealith"]
 
 simple_color:
