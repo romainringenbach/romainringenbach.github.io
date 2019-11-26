@@ -2,10 +2,10 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import "_header"
-@import "_nav"
-@import "_footer"
-@import "_content"
+@import "_sass/_header"
+@import "_sass/_nav"
+@import "_sass/_footer"
+@import "_sass/_content"
 
 body
   width: 100%
@@ -17,9 +17,13 @@ body
 
   a
     display: inline-block
-    width: 25%
+    width: 33.33333%
     height: auto
-    margin: auto
+    margin: 0
+    padding: 0
+    vertical-align: top
+    line-height: 0px
+
 
     .iwhb
       width: 100%
@@ -27,14 +31,18 @@ body
       display: inline-block
       position: relative
       overflow: hidden
+      margin: 0
+      padding: 0
 
       img
         width: 100%
         height: auto
         transition: all 0.4s ease-in-out 0s
+        margin: 0
+        padding: 0
       p
         text-align: center
-        font-size: 1.5em
+        font-size: 1.5vw
         display: inline-block
         position: absolute
         top: 50%
@@ -43,12 +51,20 @@ body
         color: white
         font-weight: bold
         margin: 0
+        padding: 0
+        line-height: normal
 
       div
         transition: all 0.4s ease-in-out 0s
         opacity: 0
+        margin: 0
+        padding: 0
     .iwhb:hover
       div
         opacity: 1
       img
         filter: brightness(50%)
+
+  @media only screen and (orientation: portrait)
+    a
+      width: 50%
