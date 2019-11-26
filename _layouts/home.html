@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="FR-fr">
+{%- include head.html -%}
+	<body>
+    <div class="home">
+      {%- for project in page.projects -%}
+			<a href="{{ project.link }}">
+				<div class="iwhb">
+					<img src="{{ project.img }}" alt="">
+					<div>
+						<p>{{ project.text }}</p>
+					</div>
+				</div>
+			</a>
+			{%- endfor -%}
+    </div>
+	</body>
+</html>
