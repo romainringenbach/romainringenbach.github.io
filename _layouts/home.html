@@ -6,16 +6,31 @@ layout: compress
 <html lang="FR-fr">
 {%- include head.html -%}
 	<body>
-    <div class="home">
-      {%- for project in page.projects -%}
-			<a href="{{ project.link }}">
+		<div class="landing">
+			<div class="landing-text">
+				<div class="title">
+					<p>{{ page.title }}</p>
+				</div>
+				<div class="description">
+					<p>{{ page.description }}</p>
+				</div>
+			</div>
+		</div>
+    <div class="projects">
+
+			{%- assign sorted_pages = site.pages | sort:"order" -%}
+
+      {%- for p in sorted_pages -%}
+			{%- if p.layout == "project" -%}
+			<a href="{{ p.url }}">
 				<div class="iwhb">
-					<img src="{{ project.img }}" alt="">
+					<img src="{{ p.img }}" alt="">
 					<div>
-						<p>{{ project.text }}</p>
+						<p>{{ p.description }}</p>
 					</div>
 				</div>
 			</a>
+			{%- endif -%}
 			{%- endfor -%}
     </div>
 	</body>
