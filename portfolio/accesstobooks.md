@@ -2,7 +2,7 @@
 layout: project
 img: /assets/accesstobooks.png
 description: A GUI student project made for the EESAB, a Art School
-github: https://github.com/nealith/ESIRxEESAB-Access-To-Books
+repo: https://github.com/nealith/ESIRxEESAB-Access-To-Books
 title: Access To Books
 permalink: /accesstobooks.html
 order : 6

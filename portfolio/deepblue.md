@@ -2,7 +2,8 @@
 layout: project
 img: /assets/deepblue.png
 description: A student project that take place in anxiety-provoking atmosphere where you pilot a sub marine in the deep sea.
-github: https://github.com/nealith/DeepBlue
+repo: https://github.com/nealith/DeepBlue
+demo: https://nealith.itch.io/deepblue
 title: DeepBlue
 permalink: /deepblue.html
 order : 1
@@ -14,7 +15,15 @@ After the collapsing of the world and the rising waters, survivor of the humanit
 
 For our final year at École Supérieure d'Ingénieurs de Rennes, we decided with [fonspa](https://github.com/fonspa) and [Hyanaki](https://github.com/Hyanaki) to develop a anxiety-provoking atmosphere video game.
 
-This page is about my work on this video game
+For this project, we used [Godot](https://godotengine.org/) as engine.
+
+This page is about my work on this video game.
+
+# 3D Assets of the cokpit and nimations
+
+I realized all mesh needed for the cockpit with [Blender](https://www.blender.org/). I made also all the animations of the cockpit's elements.
+
+Note : I didn't work on the textures, only on the mesh
 
 # Physics of the submarine
 

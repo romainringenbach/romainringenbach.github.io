@@ -2,7 +2,7 @@
 layout: project
 img: /assets/weathering.png
 description: A project that age elements on a image. Also include another project TextureQuilting that generate texture from small samples. Both are student projects based on litterature
-github: https://github.com/nealith/weathering
+repo: https://github.com/nealith/weathering
 title: Weathering
 permalink: /weathering.html
 order : 4

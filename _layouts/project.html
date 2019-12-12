@@ -1,9 +1,21 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-<html lang="FR-fr">
+<html lang="en">
 {% include head.html %}
 	<body>
-    <div class="main">
-      {{ content }}
-    </div>
+		<div class="content">
+			<div class="infobox">
+				<title>{{ page.title }}</title>
+			</div>
+			<article>
+				{{ content }}
+				{% include links.html %}
+			</article>
+		</div>
+
+
 	</body>
 </html>

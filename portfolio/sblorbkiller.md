@@ -2,6 +2,7 @@
 layout: project
 img: /assets/sblorbkiller.png
 description: A game made during MetroidVania Month 5 game jam about saving a automated space station from Sblorbs
+repo : https://github.com/nealith/SblorbKiller
 demo: https://nealith.itch.io/sblorbkiller
 title: SblorbKiller
 permalink: /sblorbkiller.html
