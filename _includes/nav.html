@@ -1,0 +1,8 @@
+<nav>
+  {%- for l in site.nav -%}
+  {%- if l.title != site.nav.first.title-%}
+  <p> :: </p>
+  {%- endif -%}
+  <a href="{{ l.link }}"> <strong>{{ l.title }}</strong> </a>
+  {%- endfor -%}
+</nav>

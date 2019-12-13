@@ -1,0 +1,39 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+	<body>
+		<div class="content">
+			<div class="infobox">
+				<title>{{ page.title }}</title>
+			</div>
+			<article>
+				{{ content }}
+
+
+				<div class="projects">
+					{%- assign sorted_pages = site.pages | sort:"order" -%}
+
+					{%- for p in sorted_pages -%}
+					{%- if p.layout == "project" -%}
+					<a href="{{ p.url }}">
+            <div class="iwhb">
+              <img src="{{ p.img }}" alt="">
+              <div>
+  							<p>{{ p.description }}</p>
+  						</div>
+            </div>
+					</a>
+					{%- endif -%}
+					{%- endfor -%}
+
+				</div>
+			</article>
+			{% include nav.html %}
+		</div>
+
+
+	</body>
+</html>
