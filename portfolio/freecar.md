@@ -12,14 +12,41 @@ permalink: /freecar.html
 order : 3
 ---
 
+# Introduction
 
+*Your are a model of new generation car, equipped with a skin of sensors that allow to feel the wind and the sun like a human. You enjoy driving endless for sensations, but that is not the opinion of your owner that launch police at your pursuit*
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et pulvinar tortor. Mauris sollicitudin sagittis enim, quis efficitur quam maximus lacinia. Aenean metus lectus, tempus eu nunc sed, posuere auctor erat. Quisque sit amet lacus nec odio condimentum accumsan. Fusce pellentesque leo ac erat maximus, vitae ullamcorper enim blandit. In ac placerat ipsum, non bibendum lorem. In pretium nisl at lobortis sagittis. Nunc ante libero, placerat sit amet tellus eget, porttitor mollis enim. In mauris enim, sodales vel mi pretium, placerat venenatis nunc. Quisque nisi metus, auctor ut finibus at, vulputate id erat. Phasellus finibus placerat ligula et tristique. Nullam sagittis nec risus in commodo. Pellentesque risus elit, ultrices at efficitur eget, ullamcorper eget velit. Nam elementum massa magna, volutpat ultrices nisl porta eget.
+*Don't let them stop your freedom !*
 
-Donec dapibus elit sit amet nulla viverra accumsan. Nullam placerat tortor mauris, sit amet lacinia eros dictum sit amet. In pulvinar, urna vehicula feugiat vehicula, odio tellus gravida mauris, id sagittis nibh odio in ante. In dictum cursus felis ac auctor. Sed faucibus lacinia vulputate. Etiam eget est non sapien eleifend luctus. Duis nec consectetur enim. Integer venenatis dui eu augue fringilla tempus. Aenean urna tellus, bibendum nec augue tincidunt, eleifend eleifend nulla. Aenean sed maximus erat. Vivamus orci eros, sodales ut est non, porttitor condimentum ligula. Phasellus vulputate diam at risus tincidunt tincidunt.
+This game is a personnal project made in a week-end for the [Bored Pixels Jam 5](https://itch.io/jam/bored-pixels-jam-5)
 
-Nulla facilisi. Nunc et nulla nec felis pharetra malesuada. Nunc tellus orci, venenatis quis ipsum non, consequat auctor augue. Vestibulum arcu enim, pretium quis auctor nec, condimentum ac risus. Pellentesque purus lorem, viverra ut orci vitae, molestie sagittis sem. Morbi elementum neque justo, id lobortis est volutpat sed. Nunc molestie nisl sodales purus porta tincidunt. Suspendisse lorem nisl, malesuada id turpis sit amet, tincidunt maximus ligula. Morbi bibendum sed ligula a efficitur. Etiam a rutrum sem. Donec aliquam lectus sed ornare volutpat. Morbi eget viverra dolor, vitae ornare dui. Nulla facilisi. Aenean tincidunt mi eget ipsum iaculis, nec luctus purus imperdiet.
+This game has been inspired by [SlipStream](https://slipstre.am/) a pseudo 3D racing game. The theme of the gamejam was **CyberPunk**, so I choose to make a game about a car that take consious of itself and turn in more on a NeedForSpeed Hot Pursuit but without the racing part, only cops and traffic.
 
-Pellentesque non mi gravida, varius lectus nec, dictum lectus. Aenean gravida arcu at massa vestibulum, non tempus sapien feugiat. Maecenas eget sem sit amet tortor fermentum sollicitudin. Vestibulum finibus sapien ut orci tempor dictum. Ut in rhoncus velit, sit amet lacinia dui. Nam nisi mi, sollicitudin ac elit ut, rhoncus rutrum dui. Quisque est tellus, dapibus sed elit sed, volutpat venenatis augue. Vivamus vel vestibulum ante, vel varius velit.
+# The renderer
 
-Sed non tellus at tortor ultrices interdum at eu magna. Sed vitae urna mollis, sagittis nunc pharetra, maximus quam. Integer faucibus posuere arcu. Proin finibus tortor at neque tincidunt, ut laoreet ante egestas. Mauris rhoncus vitae neque quis vehicula. In metus mi, placerat sed nulla blandit, tempus lobortis mi. Ut quis risus quis dui maximus pharetra. Quisque in scelerisque nibh. Phasellus sagittis mauris et libero iaculis malesuada. In ultrices neque non vulputate tristique.
+After reading this [explanation by Louis Gorenfeld](http://www.extentofthejam.com/pseudo/), I decided to go with shaders. My idea was to use Bézier curves to build the level. A curves could be use for the vertical position of the road (creating hill for example) and one other for the horizontal position of the road.
+
+We have our road texture :
+
+![road texture](https://raw.githubusercontent.com/nealith/FreeCar/master/road/assets/road.png)
+
+That will be deformed by our shader :
+
+![road rendered](https://img.itch.zone/aW1hZ2UvNDUzMTIwLzIzMDA0MzcucG5n/original/bextEr.png)
+
+A point on a Bézier curve is caracterized by the *t* value, or the couple *x,y*
+
+With the *t* value of the curve, you can retrieve easly the *x* and *y* position. But invert is more complicated, you need to test each value of *t* until you find the wanted *x* or *y* value. You have to approach it.
+
+In our case, we have the *y* value of the screen and we want to know two things :
+
+1. Get the line of the texture that correspond to this *y* position on the screen according the vertical curve
+2. Get the x offset to apply to this line according to horizontal curve
+
+So our *y* screen value correspond to the *x* position of a point *A* on the vertical curve. The *y* value of the point *A* on the vertical curve give us the line of the texture to use and also correspond to the *x* position of a point *B* on the horizontal curve. The *x* position of the point *B* give us the *x offset* to apply to our line.
+
+Once we have our line, and it's *x offset*, we deforme it in function of the *y* position of the line on the texture. The idea is if our vertical curve is linear, each line of the texture will be showed (in fact, we use a longer texture to have some visual diversity on the road ) and the deformation is linear, the line is uncompressed at bottom of the screen, and is compressed to 90% at the top of the screen to give us this 3d perspective. If the vertical curve is not linear, our deformation will not be linear. Like this :
+
+![fully deformed](https://img.itch.zone/aW1hZ2UvNDUzMTIwLzI3OTM5MjcucG5n/347x500/MNZMc3.png)
+
+Unfortunaly, I didn't get enought time to get this working. The way turns affect the car need more working, so I remove turns and hills.
