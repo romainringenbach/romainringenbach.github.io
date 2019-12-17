@@ -1,14 +1,10 @@
+{%- if page.links -%}
 <div class="links">
   <h1>Links :</h1>
   <ul>
-  {%- if page.repo -%}
-  <li><a href="page.repo">Source code</a></li>
-  {%- endif -%}
-  {%- if page.repo -%}
-  <li><a href="page.demo">Demo</a></li>
-  {%- endif -%}
-  {%- if page.exe -%}
-  <li><a href="page.repo">Executable</a></li>
-  {%- endif -%}
+    {%- for link in page.links -%}
+    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+    {%- endfor -%}
   </ul>
 </div>
+{%- endif -%}
