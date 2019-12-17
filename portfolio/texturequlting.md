@@ -1,7 +1,7 @@
 ---
 layout: page
-img: /assets/weathering.png
-description: A project that age elements on a image. Also include another project TextureQuilting that generate texture from small samples. Both are student projects based on litterature
+img: /assets/texturequilting.png
+description: A student project that generate texture from small sampler, or transfert them to a element in a image.
 links:
   - name : "Source code"
     url : https://github.com/nealith/texture-quilting
@@ -9,7 +9,6 @@ title: Texture Quilting
 permalink: /texturequilting.html
 order : 5
 ---
-
 
 A student project done in 2017-2018, based on *Image Quilting for Texture Synthesis and Transfer* from Alexei A. Efros and William T. Freeman.
 
