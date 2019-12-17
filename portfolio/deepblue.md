@@ -1,9 +1,12 @@
 ---
-layout: project
+layout: page
 img: /assets/deepblue.png
 description: A student project that take place in anxiety-provoking atmosphere where you pilot a sub marine in the deep sea.
-repo: https://github.com/nealith/DeepBlue
-demo: https://nealith.itch.io/deepblue
+links:
+  - name : "Source code"
+    url : https://github.com/nealith/DeepBlue
+  - name : "Demo"
+    url : https://nealith.itch.io/deepblue
 title: DeepBlue
 permalink: /deepblue.html
 order : 1

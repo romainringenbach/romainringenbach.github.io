@@ -1,9 +1,12 @@
 ---
-layout: project
+layout: page
 img: /assets/freecar.png
 description: A game made during the Bored Pixel Jam 5 about being a mindful smart car
-repo : https://github.com/nealith/FreeCar
-demo: https://nealith.itch.io/freecar
+links:
+  - name : "Source code"
+    url : https://github.com/nealith/FreeCar
+  - name : "Demo"
+    url : https://nealith.itch.io/freecar
 title: FreeCar
 permalink: /freecar.html
 order : 3
