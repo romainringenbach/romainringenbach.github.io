@@ -47,6 +47,6 @@ So our *y* screen value correspond to the *x* position of a point *A* on the ver
 
 Once we have our line, and it's *x offset*, we deforme it in function of the *y* position of the line on the texture. The idea is if our vertical curve is linear, each line of the texture will be showed (in fact, we use a longer texture to have some visual diversity on the road ) and the deformation is linear, the line is uncompressed at bottom of the screen, and is compressed to 90% at the top of the screen to give us this 3d perspective. If the vertical curve is not linear, our deformation will not be linear. Like this :
 
-![fully deformed](https://img.itch.zone/aW1hZ2UvNDUzMTIwLzI3OTM5MjcucG5n/347x500/MNZMc3.png)
+![fully deformed](https://img.itch.zone/aW1hZ2UvNDUzMTIwLzI3OTM5MjcucG5n/original/wGp3tW.png)
 
 Unfortunaly, I didn't get enought time to get this working. The way turns affect the car need more working, so I remove turns and hills.
