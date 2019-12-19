@@ -17,3 +17,14 @@ This is a GUI for a collaborative table designed by:
 - [Juliette Duhé](http://julietteduhe.com/)
 - [Adeline Racaud](https://adeline-racaud.tumblr.com/)
 - [Marion L'Helguen](http://marion-lhelguen.fr/)
+
+Here are some mockup from EESAB's students :
+
+![essais1](/images/accesstobooks/essais1-01.jpg)
+![draw](/images/accesstobooks/draw.jpg)
+![gui](/images/accesstobooks/gui.png)
+
+Some screenshots of the final gui :
+
+![screenshot1](/images/accesstobooks/screenshot1.png)
+![screenshot2](/images/accesstobooks/screenshot2.png)
