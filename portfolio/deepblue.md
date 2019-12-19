@@ -110,9 +110,9 @@ We use particle emission for 3 things in this game.
 
 ## Near floating particle
 
-![floating_dust](/images/deepblue/floating_dust.png)
+When I played [Soma](http://www.somagame.com/), I was impressed by underwater scenes. One of the things was the floating particles of dust. Here is my attempt to recreate that :
 
-When I played [Soma](http://www.somagame.com/), I was impressed by underwater scenes. One of the things was the floating particles of dust. Here is my attempt to recreate that.
+![soma_floating_dust](https://c4.wallpaperflare.com/wallpaper/152/584/847/frictional-games-soma-wallpaper-preview.jpg)
 
 I got good settings for particles emission, but I need something else for the shape than spheres. I decided to solve this problem by a shader. This one is based on this [deformation shader](https://digitalerr0r.net/2012/03/03/xna-4-0-shader-programming-5deform-shader/) wich is vertex shader. There are some adjustments to make:
 
@@ -120,6 +120,8 @@ I got good settings for particles emission, but I need something else for the sh
 - The transformation creates some form that are not suited for our visuals expectations.
 
 The first problem is solved by using in the algorithm the supposed final positon of each vertex of the sphere. The second is performed by modifying the different arbitraries values on the algorithm. Also, some elements have been removed because they didn't relly impact the result.
+
+![floating_dust](/images/deepblue/floating_dust.png)
 
 ## Particles system that reinforce lighting
 
