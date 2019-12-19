@@ -24,6 +24,8 @@ This page is about my work on this video game.
 
 # 3D Assets of the cockpit and animations
 
+![cockpit](/images/deepblue/cockpit.png)
+
 I realized all mesh needed for the cockpit with [Blender](https://www.blender.org/). I also made all the animations of the cockpit's elements.
 
 Note: I didn't work on the textures, only on the mesh.
@@ -34,9 +36,13 @@ The submarine is a rigid body with a capsule shape. Another rigid body is added 
 
 # Active and Passive Sonars
 
+![active_and_passive_sonars](https://img.itch.zone/aW1hZ2UvNTI5MTk5LzI3NTY2OTIucG5n/original/f%2BqOO5.png)
+
 Both of the sonar are rendered as a texture and passed to the cockpit's screens via viewport.
 
 ## Active sonar
+
+![active_sonar](/images/deepblue/active_sonar.png)
 
 The idea is to create something that the player can use to move with caution when the brightness is too low and the field of view is not enough far.
 
@@ -77,7 +83,11 @@ Once the 3D rendering noise and the 3D algorithm used to create a texture that i
 
 By changing some arbitrary value in the algorithm, we get some blurred transparent form moving slowly.
 
+![dome_effects](/images/deepblue/dome_effects.png)
+
 ## Rift effet
+
+![rift_effect](https://img.itch.zone/aW1hZ2UvNTI5MTk5LzI3NTY2OTUucG5n/original/8sp1fb.png)
 
 The rift effect is base on a handmade texture (to save time). One other solution would have been to develop another shader that use noise functions to create the rift. But this special effect is associated with another effect, a water leak (particles). So the rift has to be determinated.
 
@@ -100,6 +110,8 @@ We use particle emission for 3 things in this game.
 
 ## Near floating particle
 
+![floating_dust](/images/deepblue/floating_dust.png)
+
 When I played [Soma](http://www.somagame.com/), I was impressed by underwater scenes. One of the things was the floating particles of dust. Here is my attempt to recreate that.
 
 I got good settings for particles emission, but I need something else for the shape than spheres. I decided to solve this problem by a shader. This one is based on this [deformation shader](https://digitalerr0r.net/2012/03/03/xna-4-0-shader-programming-5deform-shader/) wich is vertex shader. There are some adjustments to make:
@@ -111,4 +123,8 @@ The first problem is solved by using in the algorithm the supposed final positon
 
 ## Particles system that reinforce lighting
 
+![spots](/images/deepblue/spots.png)
+
 The goal is to get a better impact on the effect of the submarine's light spots. Like having a visual cone of the light. For this one, sphere are enough. The particle emission is setup to having a ton of really small spheres that are moving fast in a whirlwind from the spot. By using the masks, the sphere are only enlightened by the spots giving us the expected result.
+
+![spots_in_game](https://img.itch.zone/aW1hZ2UvNTI5MTk5LzI3NTY2OTQucG5n/original/VPuhZv.png)
