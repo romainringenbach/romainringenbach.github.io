@@ -12,4 +12,11 @@ order : 5
 
 A student project done in 2017-2018, based on *Image Quilting for Texture Synthesis and Transfer* from Alexei A. Efros and William T. Freeman.
 
-Made by [fonspa](https://github.com/fonspa), [Hyanaki](https://github.com/Hyanaki), [biscotteman](https://github.com/biscotteman) and me
+Made by [fonspa](https://github.com/fonspa), [Hyanaki](https://github.com/Hyanaki), [biscotteman](https://github.com/biscotteman) and me.
+
+Here some results :
+
+![mountains](/images/texturequilting/mountains.png)
+![chantilly](/images/texturequilting/chantilly.png)
+![text](/images/texturequilting/text.png)
+![peas](/images/texturequilting/peas.png)
