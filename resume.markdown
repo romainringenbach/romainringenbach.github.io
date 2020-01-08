@@ -1,5 +1,5 @@
 ---
-title: Resumes
+title: Resume
 permalink: /resume/
 layout: page
 links:
