@@ -2,6 +2,7 @@
 title: Resume
 permalink: /resume/
 layout: page
+description: "Hi, I'm Romain Ringenbach, take a look at my resume"
 links:
   - name: "English"
     url: /resumes/romain_ringenbach_en.pdf
