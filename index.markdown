@@ -4,7 +4,7 @@ description: Hi, I'm Romain Ringenbach, A 2D/3D processing engineer passionate a
 layout: page
 ---
 
-Hi, I'm Romain Ringenbach and welcom on my website :)
+Hi, I'm Romain Ringenbach and welcome on my website :)
 
 - See [what I'm doing now](/now)
 - Take a look at my [project](/projects)
