@@ -6,7 +6,12 @@ layout: compress
 <html lang="en">
 {% include head.html %}
 	<body>
-		<div class="content">
+
+	<div class="content
+	{% if page.isindex %}
+  		index
+	{% endif %}
+		">
 			<div class="infobox">
 				<title>{{ page.title }}</title>
 			</div>
