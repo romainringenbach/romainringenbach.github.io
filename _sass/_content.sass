@@ -1,6 +1,6 @@
 .content
 
-  background-color: $content_font_color
+  background-color: $content_border
   border-radius: 50px
   text-align: center
   max-width: 700px
@@ -23,51 +23,54 @@
 
 
 .infobox
+  padding-top: 10px
+  padding-bottom: 10px
   title
     font-size: 1.8em
-    color: $content_color
+    color: $content_title
     display : inline
+    font-weight: bold
 
 
 article
   text-align: justify
   h1
     font-size: 1.4em
-    color: $content_font_color
+    color: $content_text
   h2
     font-size: 1.3em
-    font-style: bold
-    color: $content_font_color
+    font-weight: bold
+    color: $content_text
   h3
     font-size: 1.3em
-    color: $content_font_color
+    color: $content_text
   h4
     font-size: 1.2em
-    font-style: bold
-    color: $content_font_color
+    font-weight: bold
+    color: $content_text
   h5
     font-size: 1.2em
-    color: $content_font_color
+    color: $content_text
   h6
     font-size: 1.1em
-    font-style: bold
-    color: $content_font_color
+    font-weight: bold
+    color: $content_text
   p
     text-align: justify
     font-size: 1em
-    color: $content_font_color
+    color: $content_text
   a
     font-size: 1em
-    font-style: bold
-    color: $content_link_font_color
+    font-weight: bold
+    color: $content_link
   strong
     font-size: 1em
-    font-style: bold
-    color: $content_font_color
+    font-weight: bold
+    color: $content_text
   em
     font-size: 1em
     font-style: italic
-    color: $content_font_color
+    color: $content_text
 
 q, blockquote
   font-size: 1.1em
@@ -79,7 +82,7 @@ q, blockquote
 article
   padding: 30px
   margin: 5px
-  background-color: $content_color
+  background-color: $content_background
   border-radius: 40px
 
 img
@@ -94,12 +97,9 @@ img
 
 ul
   list-style-type: none
-  padding: 0% 0% 0% 0%
-  margin: 0% 0% 0% 0%
 
 li
-  padding: 0% 0% 0% 0%
-  color: $content_font_color
+  color: $content_text
 
 article
   ul
