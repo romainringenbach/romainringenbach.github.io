@@ -1,6 +1,6 @@
 ---
 layout: page
-img: /assets/sblorbkiller.png
+img: /assets/sblorbkiller.jpg
 description: A game made during MetroidVania Month 5 game jam about saving a automated space station from Sblorbs
 links:
   - name : "Source code"

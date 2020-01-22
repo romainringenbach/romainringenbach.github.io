@@ -1,6 +1,6 @@
 ---
 layout: page
-img: /assets/accesstobooks.png
+img: /assets/accesstobooks.jpg
 description: A GUI student project made for the EESAB, a Art School
 links:
   - name : "Source code"

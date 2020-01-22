@@ -1,6 +1,6 @@
 ---
 layout: page
-img: /assets/deepblue.png
+img: /assets/deepblue.jpg
 description: A student project that take place in anxiety-provoking atmosphere where you pilot a sub marine in the deep sea.
 links:
   - name : "Source code"

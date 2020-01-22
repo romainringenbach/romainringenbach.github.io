@@ -1,6 +1,6 @@
 ---
 layout: page
-img: /assets/weathering.png
+img: /assets/weathering.jpg
 description: A student project that age elements on a image.
 links:
   - name : "Source code"

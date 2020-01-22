@@ -1,6 +1,6 @@
 ---
 layout: page
-img: /assets/freecar.png
+img: /assets/freecar.jpg
 description: A game made during the Bored Pixel Jam 5 about being a mindful smart car
 links:
   - name : "Source code"

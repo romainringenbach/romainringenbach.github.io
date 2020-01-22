@@ -1,6 +1,6 @@
 ---
 layout: page
-img: /assets/texturequilting.png
+img: /assets/texturequilting.jpg
 description: A student project that generate texture from small sampler, or transfert them to a element in a image.
 links:
   - name : "Source code"
