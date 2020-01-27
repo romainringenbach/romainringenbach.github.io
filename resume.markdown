@@ -8,4 +8,6 @@ links:
     url: /resumes/romain_ringenbach_en.pdf
   - name: "French"
     url: /resumes/romain_ringenbach_fr.pdf
+  - name: "Canadian - French"
+    url: /resumes/romain_ringenbach_ca_fr.pdf
 ---
