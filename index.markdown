@@ -8,5 +8,5 @@ isindex: true
 Hi, I'm Romain Ringenbach and welcome on my website :)
 
 - See [what I'm doing now](/now)
-- Take a look at my [project](/projects)
+- Take a look at my [projects](/projects)
 - Get my [resume](/resume)
