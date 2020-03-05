@@ -20,7 +20,7 @@ order : 3
 
 This game is a personal project made in a week-end for the [Bored Pixels Jam 5](https://itch.io/jam/bored-pixels-jam-5) with the engine  [Godot](https://godotengine.org/).
 
-This game has been inspired by [SlipStream](https://slipstre.am/) a pseudo 3D racing game. The theme of the game jam was **CyberPunk**, so I choose to make a game about a car that take conscious of itself and turn in more on a NeedForSpeed Hot Pursuit but without the racing part, only cops and traffic.
+This game has been inspired by [SlipStream](https://slipstre.am/) a pseudo 3D racing game. The theme of the game jam was **CyberPunk**, so I choose to make a game about a car that take conscious of itself and turn in a NeedForSpeed Hot Pursuit but without the racing part, only cops and traffic.
 
 # The renderer
 
