@@ -7,6 +7,8 @@ layout: compress
 {% include head.html %}
 	<body>
 
+		{% include header.html %}
+
 	<video autoplay muted loop id="myVideo">
 	  <source src="/assets/bg.mp4" type="video/mp4">
 	</video>
@@ -23,9 +25,6 @@ layout: compress
 				{{ content }}
 				{% include links.html %}
 			</article>
-			{% include nav.html %}
 		</div>
-
-
 	</body>
 </html>
