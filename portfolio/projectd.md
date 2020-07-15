@@ -5,7 +5,7 @@ description: Project D is a racing game inspired by japanese street racing cultu
 links:
   - name : "Demo"
     url : https://nealith.itch.io/projectd
-title: DeepBlue
+title: Project D
 permalink: /projectd.html
 order : 1
 ---
