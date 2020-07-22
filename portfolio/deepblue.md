@@ -9,7 +9,7 @@ links:
     url : https://nealith.itch.io/deepblue
 title: DeepBlue
 permalink: /deepblue.html
-order : 2
+order : 3
 ---
 
 # Introduction
