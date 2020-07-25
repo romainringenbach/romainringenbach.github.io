@@ -7,8 +7,10 @@ description: "Here are some of my rendering projects"
 order : 2
 ---
 
-Here are some of my rendering projects:
+Here are some of my rendering projects with Unreal Engine 4:
 
 {% include video.html video="pyramid.mp4" video_type="mp4" %}
-{% include video.html video="aquatic.mp4" video_type="mp4"%}
+
+{% include video.html video="aquatic.mp4" video_type="mp4" %}
+
 ![Mountain project](/images/Mountains.jpg)
