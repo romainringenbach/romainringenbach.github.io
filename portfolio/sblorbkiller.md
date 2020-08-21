@@ -9,7 +9,7 @@ links:
     url : https://nealith.itch.io/sblorbkiller
 title: SblorbKiller
 permalink: /sblorbkiller.html
-order : 3
+order : 5
 ---
 
 

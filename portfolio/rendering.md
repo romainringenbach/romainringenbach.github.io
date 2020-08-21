@@ -4,7 +4,7 @@ img: /assets/rendering.jpg
 permalink: /rendering/
 layout: page
 description: "Here are some of my rendering projects"
-order : 2
+order : 7
 ---
 
 Here are some of my rendering projects with Unreal Engine 4:

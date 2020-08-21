@@ -4,7 +4,7 @@ layout: page
 {{ content }}
 
 <div class="projects-list">
-	{%- assign sorted_pages = site.pages | sort:"order" -%}
+	{%- assign sorted_pages = site.pages | sort:"order" | reverse -%}
 
 	{%- for p in sorted_pages -%}
 	{%- if p.order -%}
