@@ -1,0 +1,7 @@
+<video width="320" height="240" controls>
+ <source src="/videos/{{include.video}}" type="video/{{include.video_type}}">
+   {%- if include.audio -%}
+   <source src="/videos/{{include.audio}}" type="video/ogg">
+   {%- endif -%}
+Your browser does not support the video tag.
+</video>

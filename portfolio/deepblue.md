@@ -9,7 +9,7 @@ links:
     url : https://nealith.itch.io/deepblue
 title: DeepBlue
 permalink: /deepblue.html
-order : 1
+order : 6
 ---
 
 # Introduction
@@ -46,28 +46,28 @@ Both of the sonar are rendered as a texture and passed to the cockpit's screens 
 
 The idea is to create something that the player can use to move with caution when the brightness is too low and the field of view is not enough far.
 
-To generate the texture, the sonar compiles the texture from two viewport, bot associated with a camera. These cameras are setup with an environment that lighting elements that match a certain mask (a 3D area with a spherical shape registers them). Both of there are also stabilized, one always look to the top of the scene and is placed under the submarine, the other does the invert things.
+To generate the texture, the sonar computes the texture from two viewports, both associated with a camera. These cameras are setup with an environment that lighting elements that match a certain mask (a 3D area with a spherical shape registers them). Both of there are also stabilized, one always look to the top of the scene and is placed under the submarine, the other does the invert things.
 
 The two views are merged with a little difference of color in green levels to give more information to the player. The final view is added on a sonar framework.
 
 ## Passive sonar
 
-To create the passive sonar, we use a 3D area with a spherical shape to compile all objects in a certain distance. The value of each object is determinated by the maximum between their movement (since the last check) and minimal value, divided by the distance to the submarine.
+To create the passive sonar, we use a 3D area with a spherical shape to register all objects in a certain distance. The value of each object is determinated by the maximum between their movement (since the last check) and minimal value, divided by the distance to the submarine.
 
-The value is registered in a texture of one line of pixels. At each check, the index is incremented. The texture is transformed showed as a graph by a shader.
+The value is registered in a texture of one line of pixels. At each check, the index is incremented. The texture is showed as a graph by a shader.
 
 # Specials effects on the submarine window
 
-In another course, Special Effects, we have to create something with shaders/particles. To save time, we have been allowed to make them in our video game project.
+In another course, Visual Effects, we have to create something with shaders/particles. To save time, we have been allowed to make them in our video game project.
 
-On the windows of the submarine, there are two special effets. Both of the following effects are programmed in a shader.
+On the window of the submarine, there are two visual effets. Both of the following effects are programmed in a shader.
 
 - The first attempts to recreate far away dust cloud or shoal of fish
 - The second is a cracking effect that appear in case of collision or attack from a big fish.
 
 ## Dust cloud effect
 
-The idea was to add a shader on the window of the submarine (wich is a demi-sphere) to create an effect of dust cloud moving underwater, or of a faraway shoal of fish without having to use particles for that.
+The idea was to add a shader on the window of the submarine (wich is a demi-sphere) to create an effect of dust cloud moving underwater or of a faraway shoal of fish without having to use particles for that.
 
 
 After browsing examples of shader, I found this Lava Lamp shader from [The Book of Shader](https://thebookofshaders.com/edit.php#11/lava-lamp.frag) could give an interesting look but it has two problems:
@@ -89,14 +89,14 @@ By changing some arbitrary value in the algorithm, we get some blurred transpare
 
 ![rift_effect](https://img.itch.zone/aW1hZ2UvNTI5MTk5LzI3NTY2OTUucG5n/original/8sp1fb.png)
 
-The rift effect is base on a handmade texture (to save time). One other solution would have been to develop another shader that use noise functions to create the rift. But this special effect is associated with another effect, a water leak (particles). So the rift has to be determinated.
+The rift effect is based on a handmade texture (to save time). One other solution would have been to develop another shader that use noise functions to create the rift. But this special effect is associated with another effect, a water leak (particles). So the rift has to be determinated.
 
 Globally, this shader just reveals the texture pixel by pixel. They are two conditions to be revealed:
 
 - Begin under a certain distance from the rift origin.
 - Having at least one neighbor revealed.
 
-So theses conditions create a natural looking rift creation with time. The only default is that the rift is revealed in 3 times (the 3 lifes of the submarine), that make the end of the rift an each time weird looking (should be sharp, but it's more rectangular).
+So theses conditions create a natural looking rift creation with time. The only default is that the rift is revealed in 3 times (the 3 lifes of the submarine), that make the end of the rift at each time weird looking (should be sharp, but it's more rectangular).
 
 The ideal solution could be merging the texture technic to have a main determinated form for the rift (needed for the water leak effect) and using a propagation algorithm to make it more realistic.
 
@@ -127,6 +127,6 @@ The first problem is solved by using in the algorithm the supposed final positon
 
 ![spots](/images/deepblue/spots.png)
 
-The goal is to get a better impact on the effect of the submarine's light spots. Like having a visual cone of the light. For this one, sphere are enough. The particle emission is setup to having a ton of really small spheres that are moving fast in a whirlwind from the spot. By using the masks, the sphere are only enlightened by the spots giving us the expected result.
+The goal is to get a better impact on the effect of the submarine's light spots. Like having a visual cone of the light. For this one, sphere are enough. The particles emission is setup to having a ton of really small spheres that are moving fast in a whirlwind from the spot. By using the masks, the sphere are only enlightened by the spots giving us the expected result.
 
 ![spots_in_game](https://img.itch.zone/aW1hZ2UvNTI5MTk5LzI3NTY2OTQucG5n/original/VPuhZv.png)
