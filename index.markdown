@@ -1,7 +1,7 @@
 ---
 title: Hi, I'm Romain Ringenbach
 description: Hi, I'm Romain Ringenbach, A 2D/3D processing engineer passionate about video game development.
-layout: page
+layout: landingpage
 isindex: true
 ---
 

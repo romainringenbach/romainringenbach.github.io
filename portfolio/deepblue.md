@@ -10,6 +10,7 @@ links:
 title: DeepBlue
 permalink: /deepblue.html
 order : 6
+type : game
 ---
 
 # Introduction

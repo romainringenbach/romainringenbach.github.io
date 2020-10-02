@@ -3,6 +3,8 @@ layout: page
 title: "What I'm doing now"
 permalink: /now/
 description: "Hi, I'm Romain Ringenbach, and this is what I'm doing now."
+type: home
+order: 2
 ---
 
 I'm now living in France, focusing on these things:

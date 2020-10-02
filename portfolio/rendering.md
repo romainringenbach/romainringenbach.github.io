@@ -5,6 +5,7 @@ permalink: /rendering/
 layout: page
 description: "Here are some of my rendering projects"
 order : 7
+type : project
 ---
 
 Here are some of my rendering projects with Unreal Engine 4:

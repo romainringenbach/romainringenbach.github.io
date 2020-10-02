@@ -7,7 +7,8 @@ links:
     url : https://github.com/nealith/weathering
 title: Weathering
 permalink: /weathering.html
-order : 5
+order : 3
+type : project
 ---
 
 A student project (made alone) based on *Single Image Weathering via Exemplar Propagation* of Satoshi Iizuka, Yuki Endo, Yoshihiro Kanamori and Jun Mitani. I took a simpler approach of their algorithm to get a first working version in time.

@@ -8,6 +8,7 @@ links:
 title: Access To Books
 permalink: /accesstobooks.html
 order : 1
+type : project
 ---
 
 A student project made in collaboration with the [EESAB](https://www.eesab.fr/) Rennes.

@@ -1,18 +1,14 @@
 .content
 
-  background-color: $content_border
-  border-radius: 50px
-  text-align: center
-  max-width: 700px
-  width: 95%
-  padding: 5px
-  margin: auto
+  //background-color: $content_border
+  //border-radius: 50px
+  text-align: justify
   margin-top: 50px
-  box-shadow: 3px 3px 3px black
-  position: absolute
-  left: 50%
-  transform: translate(-50%, 0%)
+  //box-shadow: 3px 3px 3px black
   transition: height 0.4s ease-in-out 0s
+  max-width: 750px
+  position: relative
+  left: 0px
 
 .index
   position: absolute
@@ -34,6 +30,8 @@
 
 article
   text-align: justify
+  position: relative
+  left: 0px
   h1
     font-size: 1.4em
     color: $content_text
@@ -80,13 +78,11 @@ q, blockquote
 
 
 article
-  padding: 30px
-  margin: 5px
-  background-color: $content_background
-  border-radius: 40px
+  //background-color: $content_background
+  //border-radius: 40px
 
 img, video
-  border-radius: 30px
+  //border-radius: 30px
   margin: 0px
   width: 100%
   position: relative
@@ -97,17 +93,12 @@ img, video
 
 ul
   list-style-type: none
+  padding-left: 20px
 
 li
   color: $content_text
 
 article
   ul
-    list-style-type: circle
+    list-style-type: square
     text-align: justify
-
-@media screen and (orientation : portrait)
-  .content
-    max-width: none
-  article
-    padding: 10px

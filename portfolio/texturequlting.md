@@ -8,6 +8,7 @@ links:
 title: Texture Quilting
 permalink: /texturequilting.html
 order : 2
+type : project
 ---
 
 A student project done in 2017-2018, based on *Image Quilting for Texture Synthesis and Transfer* from Alexei A. Efros and William T. Freeman.

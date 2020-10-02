@@ -10,6 +10,7 @@ links:
 title: SblorbKiller
 permalink: /sblorbkiller.html
 order : 5
+type : game
 ---
 
 

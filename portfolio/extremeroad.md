@@ -5,9 +5,10 @@ description: Extreme Road put you behind the wheel of truck driving through dang
 links:
   - name : "Demo"
     url : https://nealith.itch.io/extremeroad
-title: Project D
+title: Extreme Road
 permalink: /extremeroad.html
-order : 9
+order : 8
+type : game
 ---
 
 Extreme Road put you behind the wheel of truck driving through dangerous roads at night time.

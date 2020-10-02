@@ -7,7 +7,8 @@ links:
     url : https://nealith.itch.io/projectd
 title: Project D
 permalink: /projectd.html
-order : 8
+order : 9
+type : game
 ---
 
 Project D is a racing game made with Unreal Engine and inspired by japanese street racing culture.

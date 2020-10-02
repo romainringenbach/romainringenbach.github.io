@@ -10,6 +10,7 @@ links:
 title: FreeCar
 permalink: /freecar.html
 order : 4
+type : game
 ---
 
 # Introduction
@@ -49,4 +50,4 @@ Once we have our line, and it's *x offset*, we deform it in function of the *y* 
 
 ![fully deformed](https://img.itch.zone/aW1hZ2UvNDUzMTIwLzI3OTM5MjcucG5n/original/wGp3tW.png)
 
-Unfortunately, I didn't get enough time to get this working. The way turns affect the car need more working, so I remove turns and hills.
+Unfortunately, I didn't get enough time to get this working. The way turns affect the car need more work, so I removed turns and hills.

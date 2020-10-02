@@ -3,6 +3,7 @@
 ---
 
 @import "_colors"
+@import "_logo"
 @import "_header"
 @import "_nav"
 @import "_footer"
@@ -10,10 +11,23 @@
 @import "_projects"
 
 body
-  width: 100vw
-  height: 100vh
   margin: 0px
   font-family: Arial
+  background-image: url("/assets/bg.jpg")
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-position: 29vw
+  background-repeat: repeat-x
+  padding-left: 30vw
+  padding-top: 10vh
+
+.strip
+  position: fixed
+  top: 0px
+  left : 29vw
+  width: 2px
+  height: 100vh
+  background-color: black
 
 #myVideo
   position: fixed
@@ -21,3 +35,13 @@ body
   bottom: 0
   min-width: 100%
   min-height: 100%
+
+@media screen and (orientation : portrait)
+  body
+    padding-left: 2vw
+    background-position: 1vw
+    padding-right: 2vw
+  .strip
+    left: 1vw
+
+//

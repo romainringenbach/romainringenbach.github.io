@@ -1,3 +1,11 @@
 <header>
-  {% include nav.html %}
+  {% include logo.html%}
+
+  {% if page.layout == "landingpage" %}
+
+    {% include nav.html %}
+
+  {% endif %}
+
+
 </header>
