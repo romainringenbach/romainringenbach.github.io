@@ -1,12 +1,12 @@
 .logo
+  width: 56px
+  height: 56px
   a
     text-decoration: none
 
   .logo-square
-    width: 5vh
-    height: 5vh
-    min-width: 50px
-    min-height: 50px
+    width: 50px
+    height: 50px
 
     border: black solid 3px
 
@@ -29,3 +29,9 @@
         color: $content_title
         margin: 0px
         font-family: "Courier New"
+
+.header-inverted
+  .logo
+      position: relative
+      left: 100%
+      transform: translateX(-100%)

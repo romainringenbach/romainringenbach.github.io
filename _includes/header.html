@@ -1,11 +1,13 @@
+{% if page.layout == "landingpage" %}
 <header>
-  {% include logo.html%}
+{% else %}
+<header class="header-inverted">
+{% endif %}
 
-  {% if page.layout == "landingpage" %}
+{% include logo.html%}
+{% include nav.html %}
 
-    {% include nav.html %}
 
-  {% endif %}
 
 
 </header>
