@@ -12,4 +12,6 @@ links:
     url: /resumes/romain_ringenbach_ca_en.pdf
   - name: "Canadian - French"
     url: /resumes/romain_ringenbach_ca_fr.pdf
+type: home
+order: 1
 ---

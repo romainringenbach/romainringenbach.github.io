@@ -9,7 +9,8 @@ links:
     url : https://nealith.itch.io/freecar
 title: FreeCar
 permalink: /freecar.html
-order : 3
+order : 4
+type : game
 ---
 
 # Introduction
@@ -20,7 +21,7 @@ order : 3
 
 This game is a personal project made in a week-end for the [Bored Pixels Jam 5](https://itch.io/jam/bored-pixels-jam-5) with the engine  [Godot](https://godotengine.org/).
 
-This game has been inspired by [SlipStream](https://slipstre.am/) a pseudo 3D racing game. The theme of the game jam was **CyberPunk**, so I choose to make a game about a car that take conscious of itself and turn in more on a NeedForSpeed Hot Pursuit but without the racing part, only cops and traffic.
+This game has been inspired by [SlipStream](https://slipstre.am/) a pseudo 3D racing game. The theme of the game jam was **CyberPunk**, so I choose to make a game about a car that take conscious of itself and turn in a NeedForSpeed Hot Pursuit but without the racing part, only cops and traffic.
 
 # The renderer
 
@@ -49,4 +50,4 @@ Once we have our line, and it's *x offset*, we deform it in function of the *y* 
 
 ![fully deformed](https://img.itch.zone/aW1hZ2UvNDUzMTIwLzI3OTM5MjcucG5n/original/wGp3tW.png)
 
-Unfortunately, I didn't get enough time to get this working. The way turns affect the car need more working, so I remove turns and hills.
+Unfortunately, I didn't get enough time to get this working. The way turns affect the car need more work, so I removed turns and hills.

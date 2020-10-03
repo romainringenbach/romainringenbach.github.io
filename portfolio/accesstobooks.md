@@ -7,7 +7,8 @@ links:
     url : https://github.com/nealith/ESIRxEESAB-Access-To-Books
 title: Access To Books
 permalink: /accesstobooks.html
-order : 6
+order : 1
+type : project
 ---
 
 A student project made in collaboration with the [EESAB](https://www.eesab.fr/) Rennes.

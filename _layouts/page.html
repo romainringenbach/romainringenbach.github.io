@@ -7,21 +7,24 @@ layout: compress
 {% include head.html %}
 	<body>
 
+		<div class="strip">
+
+		</div>
+
+
+		{% include header.html %}
+
 	<div class="content
 	{% if page.isindex %}
   		index
 	{% endif %}
 		">
-			<div class="infobox">
-				<title>{{ page.title }}</title>
-			</div>
 			<article class="{{page.layout}}">
 				{{ content }}
-				{% include links.html %}
 			</article>
-			{% include nav.html %}
 		</div>
 
 
+		{% include back.html %}
 	</body>
 </html>

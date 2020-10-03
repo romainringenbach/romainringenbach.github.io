@@ -1,5 +1,12 @@
-nav
+.meta
   color: $nav_text
+  padding-top: 20px
+
+  title
+    font-size: 1.8em
+    color: $content_title
+    display : inline
+    font-weight: bold
 
   h1
     font-size: 1.3em
@@ -26,15 +33,20 @@ nav
     padding-left: 0px
 
 .header-inverted
-  nav
-    height: 0px
-    overflow: hidden
-  .logo:hover ~ nav
-    height: auto
-  nav:hover
-    height: auto
+  .meta
+    display: block
+  .logo:hover ~ .meta
+    display: none
+  nav:hover ~ .meta
+    display: none
 
 @media screen and (orientation : portrait)
   .header-inverted
-    nav
-      display: none
+    .meta
+      text-align: left
+      .title
+        text-align: center
+    .logo:hover ~ .meta
+      display: block
+    nav:hover ~ .meta
+      display: block
