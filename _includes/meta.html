@@ -1,0 +1,15 @@
+<div class="meta">
+  <title>{{ page.title }}</title>
+  {% if page.layout == "post" %}
+  <p>{{page.date}}</p>
+
+  <p>
+    {%- for tag in page.tags -%}
+     {{ tag }}
+    {%- endfor -%}
+  </p>
+
+  {% endif %}
+
+  {% include links.html %}
+</div>
