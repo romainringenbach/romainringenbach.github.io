@@ -26,7 +26,6 @@ nav
     padding-left: 0px
 
 .header-inverted
-  text-align: right
   nav
     height: 0px
     overflow: hidden
@@ -34,3 +33,8 @@ nav
     height: auto
   nav:hover
     height: auto
+
+@media screen and (orientation : portrait)
+  .header-inverted
+    nav
+      display: none

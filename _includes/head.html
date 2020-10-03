@@ -21,4 +21,11 @@
 	{% if site.logo %}
 	<link href="{{ site.logo }}" type="image/png" rel="icon" >
 	{% endif %}
+
+	<script language="javascript">
+		document.documentElement.dataset.scroll = window.scrollY;
+	  document.addEventListener('scroll', () => {
+	    document.documentElement.dataset.scroll = window.scrollY;
+	  });
+	</script>
 </head>

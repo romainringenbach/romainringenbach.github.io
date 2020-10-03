@@ -4,6 +4,7 @@
 
 @import "_colors"
 @import "_logo"
+@import "_back"
 @import "_header"
 @import "_nav"
 @import "_meta"
@@ -38,11 +39,15 @@ body
   min-height: 100%
 
 @media screen and (orientation : portrait)
+  html
+    scroll-behavior: smooth
   body
     padding-left: 2vw
     background-position: 1vw
     padding-right: 2vw
+    padding-top: 2vh
   .strip
-    left: 1vw
+    display: none
+
 
 //
