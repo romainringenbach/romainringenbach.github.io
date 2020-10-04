@@ -15,3 +15,7 @@ links:
 type: home
 order: 1
 ---
+
+Enthusiastic video game player and developer with the ability to quickly master new tools and being patient
+at problems solving. A recent graduate in Computer Science from a French graduate engineering school, I am
+looking for an opportunity to begin my career in game industry.
