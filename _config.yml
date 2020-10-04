@@ -29,6 +29,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+kramdown:
+  toc_levels: "1"
+  parse_block_html: true
+
 nav:
   - link : /index.html
     title : home

@@ -12,7 +12,6 @@ permalink: /deepblue.html
 order : 6
 type : game
 ---
-
 # Introduction
 
 After the collapsing of the world and the rising waters, survivor of the humanity are force to sail on infinity seas. To survive and develop their fleet, people try to recover material from the past world by piloting submarine in deep sea. In these depths, the light disappears, the pressure crack the hull, and some terrible animals prowl. You can only count on sonars. A lot of pilots are plagued by strong anxiety. Will you be enough brave to explore this world?

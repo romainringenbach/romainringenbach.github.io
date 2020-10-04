@@ -20,6 +20,9 @@ layout: compress
 	{% endif %}
 		">
 			<article class="{{page.layout}}">
+
+				{% include toc.html html=content %}
+
 				{{ content }}
 			</article>
 		</div>
