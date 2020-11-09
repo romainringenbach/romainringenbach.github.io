@@ -5,14 +5,27 @@ layout: page
 description: "Hi, I'm Romain Ringenbach, take a look at my resume."
 blanklinks: true
 links:
-  - name: "English"
-    url: /resumes/romain_ringenbach_en.pdf
-  - name: "French"
-    url: /resumes/romain_ringenbach_fr.pdf
-  - name: "Canadian - English"
-    url: /resumes/romain_ringenbach_ca_en.pdf
-  - name: "Canadian - French"
-    url: /resumes/romain_ringenbach_ca_fr.pdf
+  - sublist: "General Resume"
+    links:
+    - name: "English"
+      url: /resumes/romain_ringenbach_en_g.pdf
+    - name: "French"
+      url: /resumes/romain_ringenbach_fr_g.pdf
+    - name: "Canadian - English"
+      url: /resumes/romain_ringenbach_ca_en_g.pdf
+    - name: "Canadian - French"
+      url: /resumes/romain_ringenbach_ca_fr_g.pdf
+
+  - sublist: "Video Game resume"
+    links:
+    - name: "English"
+      url: /resumes/romain_ringenbach_en_vg.pdf
+    - name: "French"
+      url: /resumes/romain_ringenbach_fr_vg.pdf
+    - name: "Canadian - English"
+      url: /resumes/romain_ringenbach_ca_en_vg.pdf
+    - name: "Canadian - French"
+      url: /resumes/romain_ringenbach_ca_fr_vg.pdf
 type: home
 order: 1
 ---
