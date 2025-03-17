@@ -28,7 +28,22 @@ url: "https://romainringenbach.com" # the base hostname & protocol for your site
 github_username:  romainringenbach
 
 # Build settings
-theme: minima
+#theme: minima
+
+# Sass conf
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
+
 plugins:
   - jekyll-feed
 
